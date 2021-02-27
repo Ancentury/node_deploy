@@ -17,6 +17,9 @@ app.get('/', function (request, response) {
   } else {
     var envName = 'review app'
   }
+  response.set({
+    "Content-Security-Policy": "script-src 'self'"
+  })
   response.render('index.html', { env: envName });
 });
 
