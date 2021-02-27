@@ -18,7 +18,7 @@ app.get('/', function (request, response) {
     var envName = 'review app'
   }
   response.set({
-    'Content-Security-Policy': 'script-src \'self\' https://hidden-meadow-68033.herokuapp.com'
+    "Content-Security-Policy": "script-src 'self' https://hidden-meadow-68033.herokuapp.com"
   });
   response.render('index.html', { env: envName });
 });
