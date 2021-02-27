@@ -19,7 +19,7 @@ app.get('/', function (request, response) {
   }
   response.set({
     "Content-Security-Policy": "script-src 'self'"
-  })
+  });
   response.render('index.html', { env: envName });
 });
 
